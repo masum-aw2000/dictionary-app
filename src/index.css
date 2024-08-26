@@ -1,0 +1,213 @@
+/* Import fonts */
+
+/* Merriweather, Poppins, Brygada 1918 */
+@import url('https://fonts.googleapis.com/css2?family=Brygada+1918:ital,wght@0,400..700;1,400..700&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+:root {
+  font-family: Merriweather;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  background-color: rgb(255, 255, 255);
+  color:var(--color-text);
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  --color-primary: #984CCE;
+  --color-secondary: #e9d0fa;
+  --color-search: #fbefff;
+  --color-text: #313131;
+}
+
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 24
+}
+
+
+/* a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+} */
+
+body {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+
+  min-height: 100vh;
+}
+
+.container{
+  padding-inline: 15%;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+  font-weight: 900;
+}
+
+audio{
+  color: #984CCE;
+}
+
+.highlight{
+  color: var(--color-primary);
+}
+
+.word-phonetic-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  /* justify-content: space-between; */
+}
+
+.word-and-phonetic {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.phonetic-container {
+  display: flex;
+  align-items: center;
+}
+
+.phonetic-container.button-only {
+  justify-content: flex-end;
+}
+
+.phonetic-text {
+  color: var(--color-primary);
+  font-size: 24px;
+  font-family: 'Poppins';
+  margin-block: 0;
+  margin-inline-end: 2rem;
+}
+
+.audio-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+audio {
+  display: none; /* Hide the default audio controls */
+}
+
+
+.part-of-speech{
+  font-family: 'Brygada+1918';
+  font-size: 24px;
+  font-weight: 800;
+
+}
+
+.meaning{
+  color: #787878;
+  font-size: 18px;
+  font-weight: 200;
+}
+
+.meaning-items{
+
+  margin-left: 2rem;
+  margin-block: 1rem;
+}
+
+.definition-list {
+  list-style-type: disc; /* or whatever bullet type you prefer */
+  padding-left: 1.5em; /* Adjust padding as needed to make room for bullets */
+}
+
+.definition-list li {
+  text-indent: -1.5em; /* Pull the first line back */
+  padding-left: 1.5em; /* Offset to align with the text */
+}
+
+.definition-list p {
+  margin: 0; /* Reset margin for paragraphs */
+  text-indent: 0; /* Ensure no additional indent */
+}
+
+.side-by-side{
+  display: flex;
+  flex-direction: row;
+}
+
+.synonym-antonym{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.synonym-antonym li{
+  margin-inline: 2rem;
+  list-style: none;
+  color: var(--color-primary);
+  font-size: 20px;
+  font-family: 'Brygada+1918';
+  font-weight: 600;
+
+}
+
+
+
+li::marker {
+  color: #984CCE; /* Customize the color */
+}
+
+.search{
+  display: flex;
+  flex-direction: row;
+}
+
+.searchBar{
+  width: 100%;
+  background-color: var(--color-search);
+  padding: .7rem;
+  border-right: none;
+  border-style: solid #313131;
+  border-width: 1.2px;
+  border-radius: 12px 0 0 12px;
+}
+
+.searchButton{
+  background-color: var(--color-search);
+  border-radius: 0 12px 12px 0;
+  color: var(--color-primary);
+  border: none;
+}
+
+.play-button {
+  width: 50px;
+  height: 50px;
+  background-color: #984cce;
+  border: none;
+  border-radius: 50%;
+  position: relative;
+  cursor: pointer;
+  outline: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #e9d0fa;
+  font-size: 24px; /* Adjust the size of the FontAwesome icon */
+}
+
+
+input[type='text']{
+  font-size: 18px;
+  color: var(--color-text);
+  font-family: Merriweather;
+  font-weight: 800;
+}
