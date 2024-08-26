@@ -10,10 +10,9 @@ const SearchBar = ({query, setQuery, handleSearch}) => {
                 onChange={(e) => setQuery(e.target.value)}
                 placeholder='Enter a word'
                 className='searchBar'
+                required
             />
-            <button className='searchButton' type='submit'><span className="material-symbols-outlined">
-                search
-            </span></button>
+            <button className='searchButton' type='submit'><i className="fa-solid fa-magnifying-glass"></i></button>
 
         </form>
     )

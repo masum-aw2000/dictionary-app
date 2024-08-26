@@ -23,14 +23,6 @@
 }
 
 
-.material-symbols-outlined {
-  font-variation-settings:
-  'FILL' 0,
-  'wght' 400,
-  'GRAD' 0,
-  'opsz' 24
-}
-
 
 /* a {
   font-weight: 500;
@@ -40,9 +32,9 @@
 
 body {
   margin: 0;
-  display: flex;
-  justify-content: center;
-
+  /* display: flex; */
+  /* justify-content: center; */
+  
   min-height: 100vh;
 }
 
@@ -175,18 +167,26 @@ li::marker {
   width: 100%;
   background-color: var(--color-search);
   padding: .7rem;
-  border-right: none;
-  border-style: solid #313131;
-  border-width: 1.2px;
+  border: 1px solid var(--color-primary);
   border-radius: 12px 0 0 12px;
+  border-right: none;
+}
+
+.searchBar:focus {
+  outline: none;
 }
 
 .searchButton{
   background-color: var(--color-search);
   border-radius: 0 12px 12px 0;
   color: var(--color-primary);
-  border: none;
+  font-size: 22px;
+  padding: .7em;
+  border: 1px solid var(--color-primary);
+  border-left: none;
+  cursor: pointer;
 }
+
 
 .play-button {
   width: 50px;

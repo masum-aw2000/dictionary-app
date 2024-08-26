@@ -33,7 +33,7 @@ function App() {
   }
 
   return (
-    <div className='app container'>
+    <div className='app'>
       <SearchBar
         query={query}
         setQuery={setQuery}
