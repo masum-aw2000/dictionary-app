@@ -1,6 +1,6 @@
 # Dictionary App
 
-![Preview Image](public\img\desktop.png)
+![Preview Image](https://raw.githubusercontent.com/masum-aw2000/dictionary-app/main/public/img/desktop.png)
 __Click [here](#) to view a live demo.__
 *Solution created by Ma'Sum Abdul-Wadud*
 
