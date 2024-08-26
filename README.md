@@ -1,7 +1,9 @@
 # Dictionary App
 
 ![Preview Image](https://raw.githubusercontent.com/masum-aw2000/dictionary-app/main/public/img/desktop.png)
+<br>
 __Click [here](#) to view a live demo.__
+<br>
 *Solution created by Ma'Sum Abdul-Wadud*
 
 
